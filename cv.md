@@ -1,4 +1,3 @@
-add .# Dripa Alexandr
 ## Contacts
 * Location: Belaya Tserkov, Ukraine
 * Phone: +38 095 21 01 360
