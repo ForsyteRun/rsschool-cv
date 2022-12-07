@@ -12,7 +12,7 @@ I am developing e-commerce on Next.js with TypeScript
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout ?? ((page) => page);
 
-  return getLayout(
+
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container
@@ -27,7 +27,6 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
         </Box>
       </Container>
     </ThemeProvider>
-  );
 };
 
 export default App
