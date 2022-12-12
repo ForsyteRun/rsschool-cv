@@ -10,18 +10,21 @@ html {
    scroll-behavior: smooth; 
 }
 
+body, p {
+   margin: 0;
+   padding: 0;
+}
+
 body {
    font-family: 'Roboto', sans-serif;
    background-color: #fff;
    min-height: 100vh;
-   margin: 0;
-   padding: 0;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
 }
 
-header {
+.header {
    background-color: #c3c2db;
 }
 
@@ -30,6 +33,33 @@ main {
    display: flex;
 }
 
+main header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.main_content {
+   display: flex;
+}
+
+main .container {
+   background-color: #e8e7f3;
+}
+
+.main_content section {
+   width: 50%;
+}
+
+.header_left {
+   flex-basis: 60%;
+}
+
+.header_right {
+   flex-basis: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
 footer {
    background-color: #c3c2db;
 }
@@ -43,6 +73,7 @@ footer .container {
    flex-grow: 1;
    max-width: 1024px;
    margin: 0 auto;
+   padding: 0 32px;
  }
 
 .nav-list {
