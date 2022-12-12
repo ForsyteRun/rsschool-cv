@@ -30,24 +30,6 @@ body {
 
 main {
    flex-grow: 1;
-   display: flex;
-}
-
-main header {
-   display: flex;
-   justify-content: space-between;
-}
-
-.main_content {
-   display: flex;
-}
-
-main .container {
-   background-color: #e8e7f3;
-}
-
-.main_content section {
-   width: 50%;
 }
 
 .header_left {
@@ -89,4 +71,9 @@ footer .container {
    line-height: 50px;
    text-decoration: none;
    color: #000;
+}
+
+section {
+   border-bottom: 1px solid #000;
+   padding: 10px;
 }
