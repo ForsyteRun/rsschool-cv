@@ -3,12 +3,24 @@
    --colorText: #fff;
 }
 
+html {
+   scroll-behavior: smooth; 
+ }
+
+html, body {
+   min-height: 100vh
+}
+
 body {
    font-family: 'Roboto', sans-serif;
    height: 100vh;
    display: flex;
    flex-direction: column;
-   overflow-y: hidden;
+   /* overflow-y: hidden; */
+}
+
+a {
+   text-decoration: none;
 }
 
 body, h1, h2, h3, h4, h5, h6, ul {
@@ -23,7 +35,7 @@ body, h1, h2, h3, h4, h5, h6, ul {
 }
 /* -----header------- */
 
-header {
+header, footer {
    height: 70px;
 }
 
@@ -96,6 +108,25 @@ main .container {
       margin-bottom: 15px;
    }
 
+   h3 {
+      margin-bottom: 20px;
+   }
+
+   article {
+      padding: 10px;
+   }
+  article {
+      border-bottom: 1px solid #000;
+   }
+   .contacts div {
+      margin-bottom: 10px;
+   }
+
+   .contacts div img{
+      margin-right: 10px;
+      vertical-align: top;
+   }
+
    .main_top_info h1::after {
       content: '__________';
       position: relative;
@@ -109,19 +140,55 @@ main .container {
       border-radius: 50%;
    }
 
-   .contacts {
+   .main_content {
       display: flex;
-      flex-direction: column;
-   }
-
-
-
-.main_content {
-   height: inherit;
-   display: flex;
 }
 
 .main_content_left, .main_content_right {
    flex-basis: 50%;
+   padding: 20px;
 }
 
+/* ------about_me------- */
+
+.about_me {
+   margin-bottom: 18px;
+}
+
+/* -------Code-------- */
+
+code {
+   width: 50px;
+}
+
+/* -----Skills----- */
+
+.skills_block {
+   margin-left: 20px;
+}
+
+.skills {
+   margin-bottom: 5px;
+}
+
+/* -----eduction------- */
+
+.courses {
+   margin: 5px 0 0 20px;
+}
+
+.education ul li {
+   margin-bottom: 9px;
+}
+
+/* ------footer------ */
+
+footer .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.footer-info img {
+   margin-left: 20px;
+}

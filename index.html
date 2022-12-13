@@ -1,65 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css">
-   <link rel="icon" href="assets/favicon.ico">
-   <link rel="preconnect" href="https://fonts.gstatic.com">  
-   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-   <a href="https://www.flaticon.com/free-icons/map" title="map icons">Map icons created by Freepik - Flaticon</a>
-   <title>cv</title>
-</head>
-<body>
- <header class="header">
-   <div class="container">
-      <nav class="nav">
-         <ul class="nav-list">
-           <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-           <li class="nav-item"><a href="#summary" class="nav-link">About me</a></li>
-           <li class="nav-item"><a href="#Code examples" class="nav-link">Code examples</a></li>
-           <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-           <li class="nav-item"><a href="#Education" class="nav-link">Education</a></li>
-           <li class="nav-item"><a href="#English" class="nav-link">English</a></li>
-         </ul>
-       </nav>
-   </div>
- </header>
- <main>
-   <div class="container">
-      <section class="main_top">
-         <img class="logo" src="./assets/img/logo.jpg" alt="logo">
-         <div class="main_top_info">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <a href="https://www.flaticon.com/free-icons/map" title="map icons"></a>
+    <title>cv</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#About_me" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Code_examples" class="nav-link">Code examples</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+              <a href="#English" class="nav-link">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="main_top">
+          <img class="logo" src="./assets/img/logo.jpg" alt="logo" />
+          <div class="main_top_info">
             <h1>Dripa Alexandr</h1>
             <div>React developer</div>
-         </div>
-      </section>
-      <section class="main_content">
-         <div class="main_content_left">
+          </div>
+        </section>
+        <section class="main_content">
+          <div class="main_content_left">
             <article>
-               <h3>Contacts</h3>
-               <div class="contacts">
-                  <img src="./assets/point.png" alt="point" width="13">
-                  <img src="./assets/mail.png" alt="mail" width="13">
-                  <img src="./assets/telegram.png" alt="telegram" width="13">
-                  <img src="./assets/github.png" alt="git" width="13">
-                  <img src="./assets/discord.png" alt="discord" width="13">
-               </div>
+              <h3 id="contacts">Contacts</h3>
+              <div class="contacts">
+                <div>
+                  <img src="./assets/point.png" alt="point" width="19" />
+                  <span>Belaya Tserkov, Ukraine</span>
+                </div>
+                <div>
+                  <img src="./assets/mail.png" alt="mail" width="19" />
+                  <a href="Mailto:forsyteRun@gmail.com">forsyteRun@gmail.com</a>
+                </div>
+                <div>
+                  <img src="./assets/telegram.png" alt="telegram" width="19" />
+                  <span>@ForsyteSasho</span>
+                </div>
+                <div>
+                  <img src="./assets/github.png" alt="git" width="19" />
+                  <a href="https://github.com/ForsyteRun"
+                    >https://github.com/ForsyteRun</a
+                  >
+                </div>
+                <div>
+                  <img src="./assets/discord.png" alt="discord" width="19" />
+                  <span>forsyteRun#0421</span>
+                </div>
+              </div>
             </article>
-         </div>
-         <div class="main_content_right">dd</div>
-      </section>
-   </div>
- </main>
- <footer>
-   <div class="container">
-      <div class="conteiner-info">
-         <span>&#64</span>
-         <span>2022</span>
+            <article>
+              <h3 id="skills">Skills</h3>
+              <div class="skills_block">
+                <ul>
+                  <li class="skills">HTML</li>
+                  <li class="skills">CSS/SASS</li>
+                  <li class="skills">JavaScript (advance)</li>
+                  <li class="skills">Git</li>
+                  <li class="skills">Gulp 4</li>
+                  <li class="skills">React.js(advance)</li>
+                  <li class="skills">Next.js (begginer)</li>
+                  <li class="skills">TypeScript (middle)</li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <h3 id="English">English</h3>
+              <div class="english">
+                <p>
+                  A2 (I had been practicing English, when I worked in the
+                  Denmark as a student)
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="main_content_right">
+            <article>
+              <h3 id="About_me">About me</h3>
+              <div class="about_me">
+                <p>
+                  My goal is to have e-commerce shop on the Next.js framework
+                  using the FireBase database. As for education, I will
+                  definitely return as a mentor to thank RSSchool
+                </p>
+                <p>Seneca said: <em>"Be confident in your abilities"</em></p>
+                <p>Glad to be here</p>
+              </div>
+            </article>
+            <article>
+              <h3 id="Education">Education</h3>
+              <div class="education">
+                <ul>
+                  <li>
+                    University: Kyiv National University of Technology and
+                    Design
+                  </li>
+                  <li>
+                    Courses:
+                    <ul class="courses">
+                      <li class="education_item">FreeCodeCamp</li>
+                      <li class="education_item">
+                        <a href="https://learn.javascript.ru/"
+                          >learn Javascript</a
+                        >
+                      </li>
+                      <li class="education_item">
+                        <span>over 120 lessons </span
+                        ><a
+                          href="https://www.youtube.com/watch?v=gb7gMluAeao&list=PLcvhF2Wqh7DNVy1OCUpG3i5lyxyBWhGZ8"
+                        >
+                          Samurai JS</a
+                        >
+                      </li>
+                      <li class="education_item">
+                        tutorials by
+                        <a href="https://www.youtube.com/c/ArchakovBlog"
+                          >Archakov Blod</a
+                        >
+                      </li>
+                      <li class="education_item">others</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article>
+              <h3 id="Code_examples">Code</h3>
+              <div class="code">
+                <code>
+                  function map(f, a) { const result = new Array(a.length); for
+                  (let i = 0; i < a.length; i++) { result[i] = f(a[i]); } return
+                  result; }
+                </code>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
-      <img src="" alt="logo">   
-   </div>
- </footer>
-</body>
+    </main>
+    <footer>
+      <div class="container">
+        <a href="https://github.com/ForsyteRun">
+          <img src="./assets/github.png" alt="git" width="20" />
+        </a>
+        <a href=""></a>
+        <div class="footer-info">
+          <span>2022</span>
+          <img src="./assets/img/rs.png" alt="logoRs" width="40" />
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
