@@ -1,11 +1,59 @@
 :root {
    --Bg: rgb(154, 135, 135);
+   --colorText: #fff;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
 }
 
 body, h1, h2, h3, h4, h5, h6, ul {
    margin: 0;
    padding: 0;
 }
+
+/* -----header------- */
+header {
+   height: 70px;
+}
+
+nav, ul {
+   height: inherit;
+}
+
+.nav-list {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   list-style: none;
+}
+
+.nav-item {
+   width: 10%;
+   text-align: center;
+}
+
+.nav-item:hover {
+   color: red;
+   transition: all 0.2s ease-in-out;
+   transform: scale(1.1);
+}
+
+.nav-link {
+   text-decoration: none;
+   color: var(--colorText)
+}
+
+.nav-link:hover {
+   transition: all 0.2s ease-in-out;
+   color: red;
+}
+
+
+footer, header {
+   background-color: var(--Bg);
+}
+
 
 body {
    height: 100vh;
@@ -14,9 +62,6 @@ body {
    overflow-y: hidden;
 }
 
-footer, header {
-   background-color: var(--Bg);
-}
 
 main {
    flex-grow: 1;
@@ -36,6 +81,8 @@ main .container {
    background-color: #999;
 }
 .container {
+   height: 100%;
    max-width: 1024px;
    margin: 0 auto; 
 }
+
