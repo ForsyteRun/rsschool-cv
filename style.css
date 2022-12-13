@@ -5,6 +5,10 @@
 
 body {
    font-family: 'Roboto', sans-serif;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   overflow-y: hidden;
 }
 
 body, h1, h2, h3, h4, h5, h6, ul {
@@ -12,7 +16,13 @@ body, h1, h2, h3, h4, h5, h6, ul {
    padding: 0;
 }
 
+.container {
+   height: 100%;
+   max-width: 1024px;
+   margin: 0 auto; 
+}
 /* -----header------- */
+
 header {
    height: 70px;
 }
@@ -49,20 +59,10 @@ nav, ul {
    color: red;
 }
 
-
 footer, header {
    background-color: var(--Bg);
 }
-
-
-body {
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-   overflow-y: hidden;
-}
-
-
+/* ------main---------- */
 main {
    flex-grow: 1;
 }
@@ -71,6 +71,51 @@ main .container {
    height: 100%;
 }
 
+   /* =======main-top===== */
+
+   .main_top {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      border-bottom: 10px solid rgba(12, 12, 12, 0.1);
+   }
+
+   .main_top_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+   }
+
+   .main_top_info div {
+      font-size: 25px;
+   }
+
+   h1 {
+      font-size: 45px;
+      margin-bottom: 15px;
+   }
+
+   .main_top_info h1::after {
+      content: '__________';
+      position: relative;
+      top: 15px;
+      left: -60%;
+      color: var(--Bg);
+   }
+
+   .logo {
+      width: 200px;
+      border-radius: 50%;
+   }
+
+   .contacts {
+      display: flex;
+      flex-direction: column;
+   }
+
+
+
 .main_content {
    height: inherit;
    display: flex;
@@ -78,11 +123,5 @@ main .container {
 
 .main_content_left, .main_content_right {
    flex-basis: 50%;
-   background-color: #999;
-}
-.container {
-   height: 100%;
-   max-width: 1024px;
-   margin: 0 auto; 
 }
 
