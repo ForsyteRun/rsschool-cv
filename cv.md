@@ -1,3 +1,4 @@
+![logo](logo.jpg)
 ## Dripa Alexandr
 ## Contacts
 * Location: Belaya Tserkov, Ukraine

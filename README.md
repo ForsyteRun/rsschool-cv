@@ -1,1 +1,1 @@
-https://github.com/ForsyteRun/rsschool-cv/blob/gh-pages/cv.md
+https://ForsyteRun.github.io/rsschool-cv/cv.md
