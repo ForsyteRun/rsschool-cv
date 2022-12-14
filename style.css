@@ -83,6 +83,12 @@ main .container {
    height: 100%;
 }
 
+.main_content {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+}
+
    /* =======main-top===== */
 
    .main_top {
@@ -109,15 +115,16 @@ main .container {
    }
 
    h3 {
+      font-size: 24px;
+      font-weight: 700;
       margin-bottom: 20px;
    }
 
-   article {
+   section {
       padding: 10px;
-   }
-  article {
       border-bottom: 1px solid #000;
    }
+
    .contacts div {
       margin-bottom: 10px;
    }
@@ -139,10 +146,6 @@ main .container {
       width: 200px;
       border-radius: 50%;
    }
-
-   .main_content {
-      display: flex;
-}
 
 .main_content_left, .main_content_right {
    flex-basis: 50%;
@@ -185,7 +188,7 @@ code {
 
 footer .container {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
 }
 
