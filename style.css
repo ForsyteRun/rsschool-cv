@@ -1,0 +1,197 @@
+:root {
+   --Bg: rgb(154, 135, 135);
+   --colorText: #fff;
+}
+
+html {
+   scroll-behavior: smooth; 
+ }
+
+html, body {
+   min-height: 100vh
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   /* overflow-y: hidden; */
+}
+
+a {
+   text-decoration: none;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul {
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   height: 100%;
+   max-width: 1024px;
+   margin: 0 auto; 
+}
+/* -----header------- */
+
+header, footer {
+   height: 70px;
+}
+
+nav, ul {
+   height: inherit;
+}
+
+.nav-list {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   list-style: none;
+}
+
+.nav-item {
+   width: 10%;
+   text-align: center;
+}
+
+.nav-item:hover {
+   color: red;
+   transition: all 0.2s ease-in-out;
+   transform: scale(1.1);
+}
+
+.nav-link {
+   text-decoration: none;
+   color: var(--colorText)
+}
+
+.nav-link:hover {
+   transition: all 0.2s ease-in-out;
+   color: red;
+}
+
+footer, header {
+   background-color: var(--Bg);
+}
+/* ------main---------- */
+main {
+   flex-grow: 1;
+}
+
+main .container {
+   height: 100%;
+}
+
+.main_content {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+}
+
+   /* =======main-top===== */
+
+   .main_top {
+      display: flex;
+      justify-content: space-around;
+      padding: 15px;
+      border-bottom: 10px solid rgba(12, 12, 12, 0.1);
+   }
+
+   .main_top_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: left;
+   }
+
+   .main_top_info div {
+      font-size: 25px;
+   }
+
+   h1 {
+      font-size: 45px;
+      margin-bottom: 15px;
+   }
+
+   h3 {
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+   }
+
+   section {
+      padding: 10px;
+      border-bottom: 1px solid #000;
+   }
+
+   .contacts div {
+      margin-bottom: 10px;
+   }
+
+   .contacts div img{
+      margin-right: 10px;
+      vertical-align: top;
+   }
+
+   .main_top_info h1::after {
+      content: '__________';
+      position: relative;
+      top: 15px;
+      left: -60%;
+      color: var(--Bg);
+   }
+
+   .logo {
+      width: 200px;
+      border-radius: 50%;
+   }
+
+.main_content_left, .main_content_right {
+   flex-basis: 50%;
+   padding: 20px;
+}
+
+/* ------about_me------- */
+
+.about_me {
+   margin-bottom: 18px;
+}
+
+/* -------Code-------- */
+
+code {
+   width: 50px;
+}
+
+/* -----Skills----- */
+
+.skills_block {
+   margin-left: 20px;
+}
+
+.skills {
+   margin-bottom: 5px;
+}
+
+/* -----eduction------- */
+
+.courses {
+   margin: 5px 0 0 20px;
+}
+
+.education ul li {
+   margin-bottom: 9px;
+}
+
+/* ------footer------ */
+
+footer .container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.footer-info img {
+   margin-left: 20px;
+}
